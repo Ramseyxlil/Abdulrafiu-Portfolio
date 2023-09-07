@@ -22,14 +22,14 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_BAY_00C537510 }}
+          azure_static_web_apps_api_token: b1a894b50120e89e102c98f3856d9c9ac032fb65fb19f585550680d7ea7394e23-f8daf8a0-4eab-4ef6-8606-49e305ad54a2003275527
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/" # App source code path
           api_location: "api" # Api source code path - optional
-          output_location: "dist" # Built app content directory - optional
+          output_location: "static" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -41,5 +41,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_KIND_BAY_00C537510 }}
+          azure_static_web_apps_api_token: b1a894b50120e89e102c98f3856d9c9ac032fb65fb19f585550680d7ea7394e23-f8daf8a0-4eab-4ef6-8606-49e305ad54a2003275527
           action: "close"
