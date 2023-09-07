@@ -27,7 +27,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_GRAY_GLACIER_0CA3F9403 }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "dist" # Update this to match your app's location
+          app_location: "static" # Update this to match your app's location
           api_location: "api" # Update this if needed
           output_location: "dist" # Update this if needed
 
